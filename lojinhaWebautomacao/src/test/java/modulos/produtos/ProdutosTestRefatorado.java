@@ -38,8 +38,8 @@ public class ProdutosTestRefatorado {
     public void testNaoEPermitidoRegistrarProdutoComValorIgualZero() {
         // Fazer login
         String mensagemApresentada = new LoginPage(navegador)
-                .informarOUsuario("admin")
-                .informarASenha("admin")
+                .informarOUsuario("usuario")
+                .informarASenha("senha")
                 .submeterFormularioDeLogin()
                 .acessarFormularioAdicaoNovoProduto()
                 .informarNomeDoProduto("teste aut. web")
@@ -57,8 +57,8 @@ public class ProdutosTestRefatorado {
     @DisplayName("Não é permitido registrar um produto com valor acima de 7000,00")
     public void testNaoEPermitidoRegistrarPordutoComValorMaiorQueSeteMil() {
         String mensagemApresentada =  new LoginPage(navegador)
-                .informarOUsuario("admin")
-                .informarASenha("admin")
+                .informarOUsuario("usuario")
+                .informarASenha("senha")
                 .submeterFormularioDeLogin()
                 .acessarFormularioAdicaoNovoProduto()
                 .informarNomeDoProduto("teste 7000")
@@ -74,8 +74,8 @@ public class ProdutosTestRefatorado {
     @DisplayName("Posso adicionar produtos que estejam no limite de 0,01")
     public void testPossoAdicionarProdutoComValorDeUmCentavo() {
         String mensagemApresentada =  new LoginPage(navegador)
-                .informarOUsuario("admin")
-                .informarASenha("admin")
+                .informarOUsuario("usuario")
+                .informarASenha("senha")
                 .submeterFormularioDeLogin()
                 .acessarFormularioAdicaoNovoProduto()
                 .informarNomeDoProduto("teste 0,01")
@@ -91,8 +91,8 @@ public class ProdutosTestRefatorado {
     @DisplayName("Posso adicionar produtos que estejam no limite de 7000,00")
     public void possoAdicionarProdutosComValorDeSeteMil() {
         String mensagemApresentada = new LoginPage(navegador)
-                .informarOUsuario("admin")
-                .informarASenha("admin")
+                .informarOUsuario("usuario")
+                .informarASenha("senha")
                 .submeterFormularioDeLogin()
                 .acessarFormularioAdicaoNovoProduto()
                 .informarNomeDoProduto("teste 7000,00")
