@@ -32,10 +32,10 @@ public class ProdutosTest {
 
         // Fazer login
         navegador.findElement(By.cssSelector("label[for='usuario']")).click();
-        navegador.findElement(By.id("usuario")).sendKeys("admin");
+        navegador.findElement(By.id("usuario")).sendKeys("usuario");
 
         navegador.findElement(By.cssSelector("label[for='senha']")).click();
-        navegador.findElement(By.id("senha")).sendKeys("admin");
+        navegador.findElement(By.id("senha")).sendKeys("senha");
 
         navegador.findElement(By.cssSelector("button[type='submit']")).click();
 
